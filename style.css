@@ -210,6 +210,53 @@ header {
     margin-bottom: 0px;
 }
 
+/*---------------------------
+    about us section styles
+-------------------------------*/
+.about-us {
+    padding-block: 130px;
+}
+
+.about-us .section-title {
+    margin-bottom: 20px;
+}
+
+.about-us .description {
+    margin-bottom: 100px;
+    max-width: 542px;
+}
+
+.about-us-content-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us-content {
+    padding: 45px 35px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-us-content img {
+    width: 45px;
+    height: 45px;
+}
+
+.about-us-content h4 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.about-us-content span {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
 /* -------------------
     Media Queries  
 ----------------------*/
@@ -342,6 +389,23 @@ header {
         font-weight: 400;
         font-size: 12px;
     }
+
+    /*---------------------------
+    about us styles mobile
+-------------------------------*/
+    .about-us {
+        padding-block: 100px;
+    }
+
+    .about-us .description {
+        margin-bottom: 50px;
+    }
+
+    .about-us-content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
 }
 
 /* Tablet Devices  */
@@ -421,5 +485,22 @@ header {
     .experience span {
         font-weight: 400;
         font-size: 14px;
+    }
+
+    /*---------------------------
+    about us styles tablet
+-------------------------------*/
+    .about-us {
+        padding-block: 100px;
+    }
+
+    .about-us .description {
+        margin-bottom: 50px;
+    }
+
+    .about-us-content-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
