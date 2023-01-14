@@ -45,6 +45,13 @@ img {
     border-radius: 8px;
 }
 
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--dark-color);
+}
+
 .description {
     font-weight: 400;
     font-size: 16px;
@@ -117,6 +124,26 @@ header {
     font-size: 64px;
     line-height: 75px;
     color: var(--dark-color);
+}
+
+/* ---------------------------
+    feature list section 
+------------------------------*/
+.feature-list {
+    padding: 85px 0 130px 0;
+    display: flex;
+    align-items: center;
+    gap: 73px;
+}
+
+.feature-list-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-list-content .description {
+    max-width: 537px;
 }
 
 /* -------------------
@@ -194,6 +221,30 @@ header {
         font-size: 30px;
         line-height: 35px;
     }
+
+    /* feature list section for mobile */
+
+    .feature-list {
+        flex-direction: column;
+    }
+
+    .feature-list-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-list-content {
+        text-align: center;
+    }
+
+    .feature-list-content .section-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .feature-list-content .description {
+        max-width: 350px;
+    }
+
 }
 
 /* Tablet Devices  */
@@ -222,5 +273,20 @@ header {
     .hero-title {
         font-size: 50px;
         line-height: 55px;
+    }
+
+
+    /* feature list section for tablet */
+
+    .feature-list {
+        flex-direction: column;
+    }
+
+    .feature-list-content {
+        text-align: center;
+    }
+
+    .feature-list-content .description {
+        max-width: 600px;
     }
 }
