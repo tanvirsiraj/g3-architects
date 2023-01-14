@@ -257,9 +257,48 @@ header {
     color: var(--secondary-color);
 }
 
+/*--------------------------
+    sponsor section styles  
+----------------------------*/
+.sponsor-section .section-title,
+.sponsor-section .description {
+    text-align: center;
+}
+
+.sponsor-section .description {
+    max-width: 540px;
+    margin-inline: auto;
+}
+
+.sponsor-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 150px;
+}
+
+.sponsor-content img {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+/*------------
+    footer  
+--------------*/
+footer {
+    background: var(--tertiary-color);
+    margin-top: 130px;
+    padding-block: 38px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #424242;
+    border-radius: 8px;
+}
+
 /* -------------------
     Media Queries  
 ----------------------*/
+
 /* Mobile Devices  */
 @media screen and (max-width: 576px) {
 
@@ -406,6 +445,31 @@ header {
         gap: 20px;
     }
 
+    /*--------------------------
+    sponsor section mobile  
+----------------------------*/
+    .sponsor-section .section-title,
+    .sponsor-section .description {
+        text-align: center;
+    }
+
+    .sponsor-section .description {
+        max-width: 540px;
+        margin-inline: auto;
+    }
+
+    .sponsor-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 80px;
+        align-content: center;
+        text-align: center;
+    }
+
+    .sponsor-content img {
+        width: 50%;
+        margin-inline: auto;
+    }
 }
 
 /* Tablet Devices  */
@@ -502,5 +566,23 @@ header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    /*--------------------------
+    sponsor section tablet  
+----------------------------*/
+    .sponsor-section .section-title,
+    .sponsor-section .description {
+        text-align: center;
+    }
+
+    .sponsor-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+
+    .sponsor-content img {
+        width: 75%;
+        /* margin-inline: auto; */
     }
 }
