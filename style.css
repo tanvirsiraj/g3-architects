@@ -146,6 +146,70 @@ header {
     max-width: 537px;
 }
 
+/*---------------------------------
+    all feature section styles  
+------------------------------------*/
+.all-feature-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.all-feature-content,
+.all-feature-section .all-feature-img {
+    flex: 1;
+}
+
+
+.all-feature-content .section-title {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+.all-feature-content .description {
+    margin-bottom: 30px;
+    max-width: 514px;
+}
+
+.all-feature-img {
+    position: relative;
+}
+
+.experience {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    display: inline-block;
+    color: var(--light-color);
+    background: var(--primary-color);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 30px;
+    border-radius: 8px;
+    padding: 30px 35px;
+    text-align: center;
+}
+
+.experience span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.feature-box {
+    margin-bottom: 50px;
+}
+
+.feature-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark-color);
+}
+
+.feature-box .description {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
 /* -------------------
     Media Queries  
 ----------------------*/
@@ -155,6 +219,11 @@ header {
     /* ---------------------
     common utilities  
 -------------------------*/
+    .section-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
     .description {
         font-size: 14px;
         line-height: 20px;
@@ -245,6 +314,34 @@ header {
         max-width: 350px;
     }
 
+    /*-----------------------------------------
+    all feature section styles for mobile  
+-------------------------------------------*/
+    .all-feature-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .all-feature-img {
+        text-align: center;
+    }
+
+    .experience {
+        position: absolute;
+        left: 10%;
+        bottom: 85%;
+        transform: translateX(-10%);
+        font-size: 25px;
+        line-height: 14px;
+        border-radius: 2px;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .experience span {
+        font-weight: 400;
+        font-size: 12px;
+    }
 }
 
 /* Tablet Devices  */
@@ -288,5 +385,41 @@ header {
 
     .feature-list-content .description {
         max-width: 600px;
+    }
+
+    /*-----------------------------------------
+    all feature section styles for tablet  
+-------------------------------------------*/
+    .all-feature-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .all-feature-content .description,
+    .feature-box .description {
+        max-width: 800px;
+    }
+
+    .all-feature-img {
+        align-self: center;
+    }
+
+    .experience {
+        position: absolute;
+        left: 10%;
+        bottom: 85%;
+        transform: translateX(-10%);
+        color: var(--light-color);
+        background: var(--primary-color);
+        font-size: 30px;
+        line-height: 18px;
+        border-radius: 3px;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .experience span {
+        font-weight: 400;
+        font-size: 14px;
     }
 }
