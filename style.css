@@ -74,6 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--tertiary-color);
 }
 
 .navbar .logo {
@@ -378,17 +379,21 @@ footer {
     .nav-menu {
         display: block;
         position: fixed;
-        top: 125px;
-        left: -100%;
-        width: 100%;
+        top: 0px;
+        right: -100%;
+        width: 50%;
         height: 100vh;
         background-color: #424242;
-        text-align: center;
+        text-align: left;
+        padding-left: 20px;
         transition: all .5s;
+        z-index: 999;
+        padding-top: 50px;
     }
 
     #check:checked~.nav-menu {
-        left: 0;
+        right: 0;
+
     }
 
     .nav-menu .nav-item {
@@ -403,6 +408,14 @@ footer {
         font-size: 20px;
         display: initial;
         cursor: pointer;
+    }
+
+    .checkBtn.xmark {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        font-size: 25px;
+        color: white;
     }
 
     /*-------------------
@@ -556,6 +569,7 @@ footer {
     .wrapper {
         padding-inline: 20px;
     }
+
 
     .navbar .logo {
         font-size: 26px;
