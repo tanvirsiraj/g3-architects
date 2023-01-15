@@ -105,7 +105,9 @@ header {
     display: none;
 }
 
-/* header hero  */
+/*-----------------
+    header hero  
+-------------------*/
 .hero-section {
     padding-top: 50px;
     display: flex;
@@ -446,9 +448,9 @@ footer {
         max-width: 350px;
     }
 
-    /*-----------------------------------------
-    all feature section styles for mobile  
--------------------------------------------*/
+    /*------------------------------
+    all feature section  mobile  
+-----------------------------------*/
     .all-feature-section {
         flex-direction: column;
         gap: 10px;
@@ -476,7 +478,7 @@ footer {
     }
 
     /*---------------------------
-    about us styles mobile
+    about us  mobile
 -------------------------------*/
     .about-us {
         padding-block: 100px;
@@ -547,7 +549,9 @@ footer {
     }
 }
 
-/* Tablet Devices  */
+/*------------------
+    Tablet Devices  
+----------------------*/
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .wrapper {
         padding-inline: 20px;
@@ -565,7 +569,9 @@ footer {
         font-size: 16px;
     }
 
-    /* header hero  */
+    /*----------------------
+    header hero tablet 
+----------------------------*/
     .hero-content {
         max-width: 700px;
     }
@@ -576,7 +582,9 @@ footer {
     }
 
 
-    /* feature list section for tablet */
+    /*-----------------------------
+    feature list section  tablet 
+--------------------------------------*/
 
     .feature-list {
         flex-direction: column;
@@ -590,9 +598,9 @@ footer {
         max-width: 600px;
     }
 
-    /*-----------------------------------------
-    all feature section styles for tablet  
--------------------------------------------*/
+    /*----------------------------
+    all feature section  tablet  
+----------------------------------*/
     .all-feature-section {
         flex-direction: column;
         gap: 10px;
@@ -626,9 +634,9 @@ footer {
         font-size: 14px;
     }
 
-    /*---------------------------
-    about us styles tablet
--------------------------------*/
+    /*-----------------
+    about us  tablet
+-----------------------*/
     .about-us {
         padding-block: 100px;
     }
@@ -647,7 +655,7 @@ footer {
         transform: scale(0.8);
     }
 
-    /*----------------------------
+    /*------------------------
     bonus section  tablet
 -----------------------------*/
     .services-container {
