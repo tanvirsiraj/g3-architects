@@ -236,6 +236,12 @@ header {
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     text-align: center;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.about-us-content:hover {
+    transform: scale(1.2);
 }
 
 .about-us-content img {
@@ -255,6 +261,40 @@ header {
     font-weight: 600;
     font-size: 20px;
     color: var(--secondary-color);
+}
+
+/*---------------------
+    bonus section  
+------------------------*/
+.services {
+    margin-bottom: 100px;
+}
+
+.services .section-title {
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.service-content h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.service-content h3:hover {
+    color: var(--primary-color);
+}
+
+.service-content h3 i {
+    font-size: 14px;
+
 }
 
 /*--------------------------
@@ -286,7 +326,7 @@ header {
 --------------*/
 footer {
     background: var(--tertiary-color);
-    margin-top: 130px;
+    margin-block: 130px;
     padding-block: 38px;
     font-weight: 400;
     font-size: 20px;
@@ -302,9 +342,9 @@ footer {
 /* Mobile Devices  */
 @media screen and (max-width: 576px) {
 
-    /* ---------------------
-    common utilities  
--------------------------*/
+    /* ------------------------
+    common utilities  Mobile
+------------------------------*/
     .section-title {
         font-size: 30px;
         line-height: 35px;
@@ -322,7 +362,9 @@ footer {
         padding: 12px 18px;
     }
 
-    /* navbar  */
+    /*---------------
+    navbar  mobile
+--------------------*/
     .wrapper {
         padding-inline: 10px;
     }
@@ -361,7 +403,9 @@ footer {
         cursor: pointer;
     }
 
-    /* header hero  */
+    /*-------------------
+    header hero  mobile
+-------------------------*/
     .hero-section {
         flex-direction: column;
     }
@@ -377,7 +421,9 @@ footer {
         line-height: 35px;
     }
 
-    /* feature list section for mobile */
+    /*----------------------
+    feature list  mobile 
+-------------------------------*/
 
     .feature-list {
         flex-direction: column;
@@ -445,6 +491,25 @@ footer {
         gap: 20px;
     }
 
+    .about-us-content:hover {
+        transform: scale(0.8);
+    }
+
+    /*----------------------------
+    bonus section  mobile
+-----------------------------*/
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-content h3 {
+        font-size: 16px;
+    }
+
+    .service-content h3 i {
+        font-size: 12px;
+    }
+
     /*--------------------------
     sponsor section mobile  
 ----------------------------*/
@@ -469,6 +534,16 @@ footer {
     .sponsor-content img {
         width: 50%;
         margin-inline: auto;
+    }
+
+    /*----------------
+    footer  mobile
+---------------------*/
+    footer {
+        margin-block: 100px;
+        padding-block: 25px;
+        font-size: 12px;
+        border-radius: 0px;
     }
 }
 
@@ -566,6 +641,17 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .about-us-content:hover {
+        transform: scale(0.8);
+    }
+
+    /*----------------------------
+    bonus section  tablet
+-----------------------------*/
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /*--------------------------
